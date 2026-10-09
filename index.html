@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTechLabs Mini Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MyTechLabs Mini Shop</h1>
+    <div id="cart-summary">Cart: <span id="cart-count">0</span> items ($<span id="cart-total">0</span>)</div>
+  </header>
+
+  <main>
+    <div class="product-card">
+      <h3>Developer Keyboard</h3>
+      <p>Price: $45</p>
+      <button onclick="addToCart('Keyboard', 45)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Wireless Mouse</h3>
+      <p>Price: $25</p>
+      <button onclick="addToCart('Mouse', 25)">Add to Cart</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
